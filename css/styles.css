@@ -1,0 +1,130 @@
+/* основний фон та колір тексту */
+:root {
+  --accent-color: #2196f3;
+  --primary-color-title: #212121;
+  --color-nav: #212121;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background-color: #ffffff;
+  color: #757575;
+}
+
+/* удалення крапочок напроти пунктів списку */
+ul {
+  list-style: none;
+}
+
+/* логотип */
+.logo {
+  color: var(--accent-color);
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* навігація сайту */
+.site-pagination .link:hover,
+.site-pagination .link:focus {
+  color: var(--accent-color);
+}
+
+.site-pagination .link {
+  text-decoration: none;
+  color: var(--color-nav);
+}
+
+.site .site-link:hover,
+.site .site-link:focus {
+  color: var(--accent-color);
+}
+
+.site .site-link {
+  text-decoration: none;
+  color: #757575;
+}
+
+/* фільтри */
+.site-nav {
+  color: var(--color-nav);
+  cursor: pointer;
+}
+
+.site-nav .site-button:hover,
+.site-nav .site-button:focus {
+  background: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.site-nav .site-button {
+  background: #f5f4f4;
+  color: var(--color-nav);
+  border-color: transparent;
+}
+
+/* головна інформація сайту */
+
+/* секція реклама */
+.promo {
+  background: #2f303a;
+  color: #ffffff;
+}
+
+.promo-button {
+  background: var(--accent-color);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.section-title {
+  color: var(--primary-color-title);
+}
+
+.text {
+  color: #757575;
+}
+
+.aside .aside-link {
+  text-decoration: none;
+}
+
+/* герої */
+.hero {
+  background: #f5f4fa;
+}
+
+.hero-title,
+.hero-name {
+  color: var(--primary-color-title);
+}
+
+/* підвал */
+.contacts {
+  background: #2f303a;
+}
+
+.contacts .logo-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contacts-adress {
+  text-decoration: none;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  background: var(--accent-color);
+}
+
+.contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
