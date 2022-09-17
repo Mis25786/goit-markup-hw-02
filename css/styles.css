@@ -3,16 +3,21 @@
   --accent-color: #2196f3;
   --primary-color-title: #212121;
   --color-nav: #212121;
+  --color-bg-promo-footer: #2f303a;
+  --primary-color-text: #757575;
+  --primary-color-bacground: #ffffff;
+  --color-logo-primary: #000000;
+  --color-bg-hero: #f5f4fa;
+  --color-text-promo: #ffffff;
+  --color-link-contacts: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--primary-color-bacground);
+  color: var(--primary-color-text);
 }
 
 /* удалення крапочок напроти пунктів списку */
@@ -31,7 +36,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
+  color: var(--color-logo-primary);
 }
 
 /* навігація сайту */
@@ -44,9 +49,13 @@ ul {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-nav);
+}
+
+.site-pagination .link.current {
+  color: var(--accent-color);
 }
 
 .site .site-link:hover,
@@ -60,10 +69,24 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #757575;
+  color: var(--primary-color-text);
 }
 
 /* фільтри */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .site-nav {
   color: var(--color-nav);
   cursor: pointer;
@@ -71,7 +94,7 @@ ul {
 
 .site-nav .site-button:hover,
 .site-nav .site-button:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   color: #ffffff;
   cursor: pointer;
 }
@@ -80,7 +103,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  background: #f5f4f4;
+  font-family: inherit;
+  background-color: #f5f4f4;
   color: var(--color-nav);
   border-color: transparent;
 }
@@ -89,7 +113,7 @@ ul {
 
 /* секція реклама */
 .promo {
-  background: #2f303a;
+  background-color: var(--color-bg-promo-footer);
 }
 
 .promo-title {
@@ -98,18 +122,24 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text-promo);
 }
 
 .promo-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   letter-spacing: 0.06em;
-  background: var(--accent-color);
-  color: #ffffff;
+  background-color: var(--color-bg-promo-footer);
+  color: var(--color-text-promo);
   border-color: transparent;
+  cursor: pointer;
+}
+
+.promo-button:hover,
+.promo-button:focus {
+  background-color: #188ceb;
+  color: var(--color-text-promo);
 }
 
 .section-title {
@@ -118,6 +148,11 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-color-title);
+}
+
+.section .text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .galery-title {
@@ -140,15 +175,18 @@ ul {
 }
 
 .aside-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.8;
-  color: #757575;
+  line-height: 1.88;
+  color: var(--primary-color-text);
 }
 
 /* герої */
 .hero {
-  background: #f5f4fa;
+  background-color: var(--color-bg-hero);
+}
+
+.hero-meta {
+  background-color: var(--primary-color-bacground);
 }
 
 .hero-title {
@@ -165,14 +203,13 @@ ul {
 }
 
 .hero-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
 
 /* підвал */
 .contacts {
-  background: #2f303a;
+  background-color: var(--color-bg-promo-footer);
 }
 
 .contacts .logo-link {
@@ -183,16 +220,19 @@ ul {
 .contacts-adress {
   text-decoration: none;
   font-style: normal;
+  line-height: 1.71;
   color: #ffffff;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  background: var(--accent-color);
+  background-color: var(--color-bg-promo-footer);
+  color: var(--accent-color);
 }
 
 .contacts-link {
-  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  color: var(--color-link-contacts);
   font-style: normal;
   text-decoration: none;
 }
