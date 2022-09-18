@@ -137,6 +137,13 @@ ul {
   cursor: pointer;
 }
 
+.box {
+  width: 216px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
 .promo-button:hover,
 .promo-button:focus {
   background-color: #188ceb;
